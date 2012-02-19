@@ -8,7 +8,7 @@ Requires at least: 3.1
 
 Tested up to: 3.4
 
-Stable tag: 2.0
+Stable tag: 2.1
 
 Uses Google's Prettify with the Sunburst syntax theme to elegantly highlight code.  
 
@@ -21,14 +21,12 @@ This plugin contains the CSS file for the Sunburst theme syntax highlighting for
 
 == Installation ==
 
-1. Add onload="prettyPrint()" to your theme's body tag in header.php
-2. Put code snippets in `<pre class="prettyprint">...</pre>` or `<code class="prettyprint">...</code>` and it will guess the syntax being used and highlight the code.
-3. You can specify a language by specifying the language extension along with the prettyprint class.
+1. Wrap code snippets in `[prettify][/prettify]` shortcode and it will guess the syntax being used and highlight the code.
+
+2. You can specify a language by specifying the language extension inside the shortcode.
 Example:
-`<pre class="prettyprint lang-html">`
+`[prettify class="lang-html"]...[/prettify]`
   The lang-* class specifies the language file extensions.
-4. Alternatively, you may use the HTML5 convention of embedding a code element.  Example: `<pre class="prettyprint"><code class="language-java">...</code></pre>
-`
 
 __File extensions supported by default include:__
     "bsh", "c", "cc", "cpp", "cs", "csh", "cyc", "cv", "htm", "html",
@@ -42,6 +40,19 @@ More information is available in the Google Code Prettify Readme: [http://google
 == Screenshots ==
 
 ![image](http://www.rachelbaker.me/sunburst-code-prettify/Sunburst-Prettify.png)
+
+
+== Changelog ==
+
+= 2.1 =
+* Added [prettify] shortcode
+* Automatically added the required onload="prettyPrint()" to body tag with jquery
+
+= 2.0 =
+* Initial WordPress.org commit
+
+
+
 
 
 
