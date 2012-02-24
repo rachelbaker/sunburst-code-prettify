@@ -8,7 +8,7 @@ Requires at least: 3.1
 
 Tested up to: 3.4
 
-Stable tag: 2.1
+Stable tag: 2.1.5
 
 Uses Google's Prettify with the Sunburst syntax theme to elegantly highlight code.  
 
@@ -43,6 +43,11 @@ More information is available in the Google Code Prettify Readme: [http://google
 
 
 == Changelog ==
+
+= 2.1.5 =
+* Added CSS parsing js file
+* Moved JS files into /js folder
+* Fixed missing files from 2.1 commit
 
 = 2.1 =
 * Added [prettify] shortcode
